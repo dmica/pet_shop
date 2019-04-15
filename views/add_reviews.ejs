@@ -1,0 +1,37 @@
+<!--get access to header file-->
+<% include ../partials/header %>
+
+<div class="row">
+    <h1>Leave us a review!</h1>
+    
+    <div class="grid-container_form">
+        <form accept-charset="UTF-8" action="/add_reviews" method="post">
+            
+            <div class="item_ae">
+                <label for="title">*Title:</label>
+                <input name="title" type="text" placeholder="Please enter review title" , required/>
+                
+                <label for="name">*Name:</label>
+                <input name="name" type="text" placeholder="Please enter your name" , required/>
+                
+                <label for="surname">*Surname:</label>
+                <input name="surname" type="text" placeholder="Please enter your surname" , required/>
+                
+                <label for="email">*Email:</label>
+                <input name="email" type="text" placeholder="Please enter your email" , pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required/>
+                
+                <label for="recommend">*Would you recommend PetShop?</label>
+                <input name="recommend" type="text" placeholder="Would you recommend Pet Shop?" , required/>
+                
+       
+                <button class="button_default">Add New Review</button>
+            </div>
+            
+        </form>
+        
+    </div>
+    
+</div>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<!--get access to footer file-->
+<% include ../partials/footer %>

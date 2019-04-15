@@ -1,0 +1,40 @@
+<!--get access to header file-->
+<% include ../partials/header %>
+
+<h1>Edit Products</h1>
+
+<div class="row">
+    
+    <div class="grid-container_form">
+
+<% res1.forEach(function(product) { %>
+        <form accept-charset="UTF-8" action="/editsql/<%= product.Id %>" method="post" enctype="multipart/form-data">
+            
+            <div class="item_ae">
+                
+                <label for="name">*Name:</label>
+                <input name="name" type="text" value="<%=product.Name%>", required/>
+                
+                <label for="pet">*Pet:</label>
+                <input name="pet" type="text" value="<%=product.Pet%>", required/>
+                
+                <label for="available">*Available:</label>
+                <input name="available" type="text" value="<%=product.Available%>", required/>
+                
+                <label for="image">*Image:</label>
+                <input class="button" type="file" name="sampleFile", title="Correct image format Please", accept=".png, .jpg, .jpeg", required/><br>
+                
+                <label for="price">*Price:</label>
+                <input name="price" type="text" value="<%=product.Price%>", title="Numbers Only Please", maxlength="15", pattern="\d*", required/>
+            
+                <button class="button_edit">Edit Product</button>
+            </div>
+            
+        </form>
+    <% }); %> 
+    </div>
+    
+</div>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<!--get access to footer file-->
+<% include ../partials/footer %>

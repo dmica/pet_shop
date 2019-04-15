@@ -1,0 +1,44 @@
+<!--get access to header file-->
+<% include ../partials/header %>
+
+<div class="row">
+    
+    
+    <div class="grid.container_form">
+    <h1>Edit Contacts</h1>
+    
+        
+        <form accept charset="UTF-8" method="post">
+            <div class="item_ae">
+                
+                <label for="street">*Street:</label>
+                <input name="street" type="text" placeholder="Enter Street", required>
+                
+                <label for="city">*City:</label>
+                <input name="city" type="text" placeholder="Enter City", required>
+                
+                <label for="country">*Country:</label>
+                <input name="country" type="text" placeholder="Enter Country", required>
+                
+                <label for="hours">*Hours:</label>
+                <input name="hours" type="text" placeholder="Enter Hours", required>
+                
+                <label for="email">*Email:</label>
+                <input name="email" type="text" placeholder="Enter Email", required>
+                
+                <label for="phone">*Phone:</label>
+                <input name="phone" type="text" placeholder="Enter Phone", pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required>
+                
+                <label for="fax">*Fax:</label>
+                <input name="fax" type="text" placeholder="Enter Faxs", required>
+                
+                <button class="button_default">Save</button>
+            </div>
+        </form>
+   
+    </div>
+    
+</div>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<!--get access to footer file-->
+<% include ../partials/footer %>

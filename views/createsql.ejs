@@ -1,0 +1,39 @@
+<!--get access to header file-->
+<% include ../partials/header %>
+
+<div class="row">
+    <h1>Add new product to Pet Shop</h1>
+    
+    <div class="grid-container_form">
+        <form accept-charset="UTF-8" id="uploadForm" ref="uploadForm" action="/createsql" method="post" enctype="multipart/form-data">
+            
+            <div class="item_ae">
+                
+                <label for="name">*Name:</label>
+                <input name="name" type="text" placeholder="Please enter product name", required/>
+                
+                <label for="pet">*Pet:</label>
+                <input name="pet" type="text" placeholder="Please enter for which pet is product", required/>
+                
+                <label for="available">*Available:</label>
+                <input name="available" type="text" placeholder="Please enter is the product available", required/>
+                
+                <label for="image">*Image:</label>
+                <input class="button" type="file" name="sampleFile", title="Correct image format Please", accept=".png, .jpg, .jpeg", required/><br><br>
+                
+                
+                <label for="price">*Price:</label>
+                <input name="price" type="text" placeholder="Please enter product price", title="Numbers Only Please", maxlength="15", pattern="\d*", required/>
+            
+                <button class="button_default">Add New Product</button>
+            </div>
+            
+        </form>
+        
+    </div>
+    
+</div>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+<!--get access to footer file-->
+<% include ../partials/footer %>

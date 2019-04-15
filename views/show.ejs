@@ -1,0 +1,35 @@
+<!--get access to header file-->
+<% include ../partials/header %>
+        <div class="spacers">
+        </div> 
+        
+        <div class="row">
+            <div class="grid-container_show">
+              
+            <% res1.forEach(function(product) { %>
+              
+                <div class="item">     
+                    <div class="item">
+                        <h1 class="itemtitle">Id: <%= product.Id%></h1>
+                        <h1 class="itemp">Name: <%= product.Name%></h1>
+                        <h1 class="itemp">Pet: <%= product.Pet%></h1>
+                        <h1 class="itemp">Currently available: <%= product.Available%></h1>
+                        <img src="/<%= product.Image %>" class="pimage"></image>
+                        <h1 class="itemp">Price: <%= product.Price%></h1>
+                        <a href="/productssql" class="button_default">Go Back</a>
+                        <a href="/edit/<%= product.Id %>" class="button_edit">Edit</a>
+                        <a href="/deletesql/<%= product.Id %>" class="button_delete">Delete</a>
+                    </div>
+                </div>
+                
+            <% }); %>   
+                   
+            </div>
+          </h1>
+        </div>
+
+        
+
+</br></br></br></br></br></br></br></br>
+<!--get access to footer file-->
+<% include ../partials/footer %>

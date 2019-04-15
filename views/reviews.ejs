@@ -1,0 +1,34 @@
+<!--get access to header file-->
+<% include ../partials/header %>
+            <h1>
+                Customer Reviews!
+            </h1>
+        
+        <div class="row">
+            <div class="grid-container">
+              
+            <% review.forEach(function(review) { %>
+              
+                <div class="item">     
+                    <div class="item">
+                        <h1 class="itemtitle"><%= review.title %> </h1>
+                        <h1 class="itemp">Name: <%= review.name%></h1>
+                        <h1 class="itemp">Surname: <%= review.surname%></h1>
+                        <h1 class="itemp">Email: <%= review.email%></h1>
+                        <h1 class="itemp">Would you recommend Pet Shop: <%= review.recommend%></h1>
+                        <a href="/delete_reviews/"<%= review.id %> class="button_delete">Delete</a>
+                        <a href="/editreview/<%= review.id %>" class="button_edit">Edit</a>
+                        <p class="itemp"></p>
+                    </div>
+                </div>
+                
+            <% }); %>   
+                   
+            </div>
+          </h1>
+        </div>
+        
+
+        
+<!--get access to footer file-->
+<% include ../partials/footer %>

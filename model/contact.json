@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "street": "11 Upper O'Connell Street",
+        "city": "Dublin",
+        "country": "Ireland",
+        "hours": "9am - 8pm",
+        "email": "petshop.oconnellstreet@petshop.com",
+        "phone": "(01) 942 132",
+        "fax": "(01) 647 197"
+    },
+    {
+        "id": "2",
+        "street": "46 Leeson Street",
+        "city": "Cork",
+        "country": "Ireland",
+        "hours": "9am - 7pm",
+        "email": "petshop.leesonstreet@petshop.com",
+        "phone": "(021) 835 245",
+        "fax": "(021) 489 793"
+    },
+    {
+        "id": "3",
+        "street": "72 Winetavern Street",
+        "city": "Galway",
+        "country": "Ireland",
+        "hours": "9am - 6:30pm",
+        "email": "petshop.winetavernstreet@petshop.com",
+        "phone": "(091) 242 865",
+        "fax": "(091) 005 864"
+    },
+    {
+        "id": "4",
+        "street": "3 Templeogue Road",
+        "city": "Limerick",
+        "country": "Ireland",
+        "hours": "9am - 6pm",
+        "email": "petshop.templeoguestreet@petshop.com",
+        "phone": "(061) 856 758",
+        "fax": "(061) 537 684"
+    },
+    {
+        "id": "41",
+        "street": "test",
+        "city": "test",
+        "country": "test",
+        "hours": "test",
+        "email": "test@test.com",
+        "phone": "(02) 444 555",
+        "fax": "(02) 555 444"
+    }
+]

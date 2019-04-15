@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pet Shop</title>
+        <link rel="stylesheet" href="../app.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("#hide").click(function(){
+                $(".itemp_show").hide();
+              });
+              $("#show").click(function(){
+                $(".itemp_show").show();
+              });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="imhold"><img alt="lo" id="poster" class="logiIm" src='/paw.png'></div>
+            <div class="navhold">
+              <div class="topnav">
+              <a href="/">Home</a>
+              <a href="/about">About us</a>
+              <a href="/productssql">Products</a>
+              <a href="/createsql">Add Product</a>
+              <a href="/reviews">Reviews</a>
+              <a href="/add_reviews">Add Review</a>
+              <a href="/contacts">Contact us</a>
+              <a href="/add_contacts">Add Contact</a>
+              </div>
+            </div>
+        </div>
